@@ -175,16 +175,16 @@ async function loginUser(credentials) {
                
                 <div className="form-group">
                     <label>Title</label>
-                    <input type="text" value={this.state.title}  onChange={this.TitleChange} className="form-control" placeholder="Enter First Name" />
+                    <input type="text" value={this.state.title}  onChange={this.TitleChange} className="form-control" placeholder="Enter Title" />
                 </div>
                 <div className="form-group">
                     <label>Gener</label>
-                    <input type="text" value={this.state.Gener} onChange={this.GenerChange} className="form-control" placeholder="Enter Last Name" />
+                    <input type="text" value={this.state.Gener} onChange={this.GenerChange} className="form-control" placeholder="Enter Gener" />
                 </div>
 
                 <div className="form-group">
                     <label>Publish Date</label>
-                    <input type="date" value={this.state.publishDate} onChange={this.datePublishChange} className="form-control" placeholder="Enter email" />
+                    <input type="date" value={this.state.publishDate} onChange={this.datePublishChange} className="form-control"  />
                 </div>
                 <div className="form-group">
                 <label>Author</label>
@@ -200,7 +200,7 @@ async function loginUser(credentials) {
              </div>
              <div className="form-group">
                     <label>Quantity</label>
-                    <input type="text" value={this.state.quantity} onChange={this.quantityChange} className="form-control" placeholder="Enter Last Name" />
+                    <input type="text" value={this.state.quantity} onChange={this.quantityChange} className="form-control" placeholder="Enter Quantity" />
                 </div>
 
                 
