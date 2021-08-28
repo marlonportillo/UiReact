@@ -5,7 +5,7 @@ import 'alertifyjs/build/css/alertify.css';
 import "bootstrap-icons/font/bootstrap-icons.css";
 
 async function loginUser(credentials) {
-    return fetch('http://localhost:3001/addUsers', {
+    return fetch('https://morning-chamber-79207.herokuapp.com/addUsers', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
@@ -18,7 +18,7 @@ async function loginUser(credentials) {
    }
    
 async function getrol() {
-    return fetch('http://localhost:3001/getRols', {
+    return fetch('https://morning-chamber-79207.herokuapp.com/getRols', {
       method: 'GET',
       headers: {
         'Content-Type': 'application/json'

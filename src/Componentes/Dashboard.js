@@ -10,7 +10,7 @@ import 'alertifyjs/build/css/alertify.css';
 
 
 async function getBooks() {
-    return fetch('http://localhost:3001/getBooks', {
+    return fetch('https://morning-chamber-79207.herokuapp.com/getBooks', {
       method: 'GET',
       headers: {
         'Content-Type': 'application/json'
@@ -22,7 +22,7 @@ async function getBooks() {
     });
    }
    async function getBooksbyid(parameter) {
-    return fetch('http://localhost:3001/getBooksById/'+parameter, {
+    return fetch('https://morning-chamber-79207.herokuapp.com/getBooksById/'+parameter, {
       method: 'GET',
       headers: {
         'Content-Type': 'application/json'
@@ -33,7 +33,7 @@ async function getBooks() {
     });
    }
    async function getUserbyid(parameter) {
-    return fetch('http://localhost:3001/getUsersbyId/'+parameter, {
+    return fetch('https://morning-chamber-79207.herokuapp.com/getUsersbyId/'+parameter, {
       method: 'GET',
       headers: {
         'Content-Type': 'application/json'
@@ -44,7 +44,7 @@ async function getBooks() {
     });
    }
    async function getstockbybook(parameter) {
-    return fetch('http://localhost:3001/getstocksbybook/', {
+    return fetch('https://morning-chamber-79207.herokuapp.com/getstocksbybook/', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
@@ -57,7 +57,7 @@ async function getBooks() {
    }
 
    async function getprofile(parameter) {
-    return fetch('http://localhost:3001/GetProfile', {
+    return fetch('https://morning-chamber-79207.herokuapp.com/GetProfile', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
@@ -70,7 +70,7 @@ async function getBooks() {
    }
 
    async function getallprofile() {
-    return fetch('http://localhost:3001/GetProfileAll', {
+    return fetch('https://morning-chamber-79207.herokuapp.com/GetProfileAll', {
       method: 'GET',
       headers: {
         'Content-Type': 'application/json'
@@ -84,7 +84,7 @@ async function getBooks() {
 
 
    async function putstock(parameter) {
-    return fetch('http://localhost:3001/upd-Stock/'+parameter._id, {
+    return fetch('https://morning-chamber-79207.herokuapp.com/upd-Stock/'+parameter._id, {
       method: 'PUT',
       headers: {
         'Content-Type': 'application/json'
@@ -99,7 +99,7 @@ async function getBooks() {
     return array.filter(e=> e.nom!==elem.nom && e.tipo!==elem.tipo);
   }
    async function addProfile(parameter) {
-    return fetch('http://localhost:3001/addProfile', {
+    return fetch('https://morning-chamber-79207.herokuapp.com/addProfile', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
@@ -111,7 +111,7 @@ async function getBooks() {
     });
    }
    async function deleteProfile(parameter) {
-    return fetch('http://localhost:3001/deleteprofile', {
+    return fetch('https://morning-chamber-79207.herokuapp.com/deleteprofile', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
@@ -123,7 +123,7 @@ async function getBooks() {
     });
    }
    async function GetProfileBook(parameter) {
-    return fetch('http://localhost:3001/GetProfileBook', {
+    return fetch('https://morning-chamber-79207.herokuapp.com/GetProfileBook', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'

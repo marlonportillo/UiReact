@@ -5,7 +5,7 @@ import 'alertifyjs/build/css/alertify.css';
 import "bootstrap-icons/font/bootstrap-icons.css";
 
 async function loginUser(credentials) {
-    return fetch('http://localhost:3001/addBooks', {
+    return fetch('https://morning-chamber-79207.herokuapp.com/addBooks', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
@@ -17,7 +17,7 @@ async function loginUser(credentials) {
     });
    }
    async function PostStock(credentials) {
-    return fetch('http://localhost:3001/addStocks', {
+    return fetch('https://morning-chamber-79207.herokuapp.com/addStocks', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
@@ -29,7 +29,7 @@ async function loginUser(credentials) {
     });
    }
    async function getAuthors() {
-    return fetch('http://localhost:3001/getAuthors', {
+    return fetch('https://morning-chamber-79207.herokuapp.com/getAuthors', {
       method: 'GET',
       headers: {
         'Content-Type': 'application/json'
